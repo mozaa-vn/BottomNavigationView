@@ -14,5 +14,23 @@
         android:id="@+id/navigation_slug"
         android:name="net.gadev.bottomnavigation.SlugFragment"
         android:label="@string/slug"
-        tools:layout="@layout/fragment_slug" />
+        tools:layout="@layout/fragment_slug" >
+        <action
+            android:id="@+id/action_slash"
+            app:destination="@id/navigation_slash"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_monkey"
+        android:name="net.gadev.bottomnavigation.MonkeyFragment"
+        android:label="@string/monkey"
+        tools:layout="@layout/fragment_monkey" />
+    <fragment
+        android:id="@+id/navigation_slash"
+        android:name="net.gadev.bottomnavigation.SlashFragment"
+        android:label="@string/slash"
+        tools:layout="@layout/fragment_slash" />
 </navigation>

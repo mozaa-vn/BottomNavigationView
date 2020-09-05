@@ -3,12 +3,26 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@android:color/holo_green_light"
     tools:context=".MonsterFragment">
 
-    <!-- TODO: Update blank fragment layout -->
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/monster"
+        android:textColor="@android:color/white"
+        android:textSize="34dp" />
+
+    <Button
+        android:id="@+id/navigateToMonkey"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_margin="16dp"
+        android:background="@android:color/transparent"
+        android:text="Navigate to Monkey"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="20dp" />
 
 </FrameLayout>
